@@ -31,7 +31,7 @@ func main() {
 		apiVersion = version.Get("ApiVersion")
 		log.Print("Api version: ", apiVersion)
 	} else {
-		log.Fatalf("Faid to get docker version: %s", err)
+		log.Fatalf("Faild to get docker version: %s", err)
 	}
 
 	cleanImages(client)
